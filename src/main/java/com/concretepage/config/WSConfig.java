@@ -35,6 +35,6 @@ public class WSConfig extends WsConfigurerAdapter {
 	}
 	@Bean
 	public XsdSchema articlesSchema() {
-		return new SimpleXsdSchema(new ClassPathResource("resources/articles.xsd"));
+		return new SimpleXsdSchema(new ClassPathResource("articles.xsd"));
 	}
 }
