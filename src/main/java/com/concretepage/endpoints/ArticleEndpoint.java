@@ -24,6 +24,8 @@ import com.concretepage.service.IArticleService;
 
 
 
+
+
 @Endpoint
 public class ArticleEndpoint {
 	private static final String NAMESPACE_URI = "http://www.concretepage.com/article-ws";

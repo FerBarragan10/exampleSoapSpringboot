@@ -12,7 +12,10 @@ import org.springframework.xml.xsd.SimpleXsdSchema;
 import org.springframework.xml.xsd.XsdSchema;
 
 @Configuration
+
 @EnableWs
+ 
+
 public class WSConfig extends WsConfigurerAdapter {
 	@Bean
 	public ServletRegistrationBean messageDispatcherServlet(ApplicationContext applicationContext) {
@@ -32,6 +35,6 @@ public class WSConfig extends WsConfigurerAdapter {
 	}
 	@Bean
 	public XsdSchema articlesSchema() {
-		return new SimpleXsdSchema(new ClassPathResource("xsds/articles.xsd"));
+		return new SimpleXsdSchema(new ClassPathResource("resources/articles.xsd"));
 	}
 }
